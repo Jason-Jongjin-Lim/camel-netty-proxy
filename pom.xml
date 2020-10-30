@@ -166,20 +166,14 @@
               </execution>
             </executions>
             <configuration>
-<!--
               <enricher>
-                <includes>
-                  <include>fmp-openshift-autotls</include>
-                </includes>
                 <config>
-                  <fmp-openshift-autotls>
-                    <tlsSecretName>camel-netty-proxy-tls</tlsSecretName>
-                    <tlsSecretVolumeName>camel-netty-proxy-tls-pem</tlsSecretVolumeName>
-                    <jksVolumeName>camel-netty-proxy-tls-jks</jksVolumeName>
-                  </fmp-openshift-autotls>
+                  <fmp-service>
+                    <name>myservice</name>
+                    <port>80:8080</port>
+                  </fmp-service>
                 </config>
               </enricher>
--->
               <resources>
                 <labels>
                   <service>
