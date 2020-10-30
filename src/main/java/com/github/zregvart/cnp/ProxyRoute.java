@@ -29,7 +29,8 @@ public class ProxyRoute extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
-        from("netty4-http:proxy://0.0.0.0:8080").threads(20).loadBalance().roundRobin().to("http://52.78.125.153:8080","http://15.165.143.42:8080");
+        from("netty:tcp:\\0.0.0.0:8080").loadBalance().roundRobin()
+        .to("netty:tcp:\\52.78.125.153:8080","netty:tcp:\\15.165.143.42:8080");
     }
 
 }
