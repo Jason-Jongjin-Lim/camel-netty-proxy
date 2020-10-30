@@ -166,6 +166,7 @@
               </execution>
             </executions>
             <configuration>
+<!--
               <enricher>
                 <includes>
                   <include>fmp-openshift-autotls</include>
@@ -178,6 +179,7 @@
                   </fmp-openshift-autotls>
                 </config>
               </enricher>
+-->
               <resources>
                 <labels>
                   <service>
