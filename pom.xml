@@ -223,7 +223,7 @@
                   <build>
                     <from>fabric8/s2i-java:latest-java11</from>
                     <ports>
-                      <port>8443</port>
+                      <port>8080</port>
                     </ports>
                     <assembly>
                       <basedir>/deployments</basedir>
